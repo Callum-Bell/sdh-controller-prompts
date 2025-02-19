@@ -1,37 +1,74 @@
 {
 	"name": "Button Prompts Galore",
-	"version": "v1.2",
 	"author": "ZeusOfTheCrows, InsaneCallum",
 	"target": "Tweak",
+	"version": "v1.3",
 	"description": "change controller button prompts. includes snes, switch, dualshock 2 & 3, DualSense, & xbox [coloured]",
-	"manifest_version": 3,
+	"manifest_version": 5,
 	"inject": {
-		"global.css": ["SP", "QuickAccess"]
+		"global.css": [
+			"SP",
+			"QuickAccess"
+		]
 	},
+	"dependencies": {},
 	"patches": {
 		"controller Type": {
-			"default": "Super NES",
 			"type": "dropdown",
-			"values":{
+			"default": "Super NES",
+			"values": {
 				"Super NES": {
-					"snes/snes.css": ["SP", "QuickAccess"]
+					"snes/snes.css": [
+						"SP",
+						"QuickAccess"
+					]
 				},
 				"Switch": {
-					"nsx/nsx.css": ["SP", "QuickAccess"]
+					"nsx/nsx.css": [
+						"SP",
+						"QuickAccess"
+					]
 				},
 				"DualShock 2": {
-					"ds2/ds2.css": ["SP", "QuickAccess"]
+					"ds2/ds2.css": [
+						"SP",
+						"QuickAccess"
+					]
 				},
 				"DualShock 3": {
-					"ds3/ds3.css": ["SP", "QuickAccess"]
+					"ds3/ds3.css": [
+						"SP",
+						"QuickAccess"
+					]
 				},
 				"DualSense": {
-					"ds5/ds5.css": ["SP", "QuickAccess"]
+					"ds5/ds5.css": [
+						"SP",
+						"QuickAccess"
+					]
 				},
 				"XInput": {
-					"xbox/xbox.css": ["SP", "QuickAccess"]
+					"xbox/xbox.css": [
+						"SP",
+						"QuickAccess"
+					]
 				}
-			}
+			},
+			"components": []
+		},
+		"override playstation": {
+			"type": "checkbox",
+			"default": "No",
+			"values": {
+				"Yes": {
+					"patches/override_ps.css": [
+						"SP",
+						"QuickAccess"
+					]
+				},
+				"No": {}
+			},
+			"components": []
 		}
 	}
 }

@@ -1,0 +1,15 @@
+img[src="/steaminputglyphs/ps_button_triangle.svg"]{  /* face button up (Δ) */
+    content: var(--zbpg-face-up, url("/steaminputglyphs/ps_button_triangle.svg"));
+}
+
+img[src="/steaminputglyphs/ps_button_x.svg"]{  /* face button down (Χ) */
+    content: var(--zbpg-face-dn, url("/steaminputglyphs/ps_button_x.svg"));
+}
+
+img[src="/steaminputglyphs/ps_button_square.svg"]{  /* face button left (Π) */
+    content: var(--zbpg-face-lf, url("/steaminputglyphs/ps_button_square.svg"));
+}
+
+img[src="/steaminputglyphs/ps_button_circle.svg"]{  /* face button right (Ο) */
+    content: var(--zbpg-face-rt, url("/steaminputglyphs/ps_button_circle.svg"));
+}
