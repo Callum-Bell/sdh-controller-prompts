@@ -47,6 +47,9 @@
 						"QuickAccess"
 					]
 				},
+				"PS Hybrid": {
+					"ps-hybrid/ps-hybrid.css": ["SP", "QuickAccess"]
+				},
 				"XInput": {
 					"xbox/xbox.css": [
 						"SP",
